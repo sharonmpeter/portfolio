@@ -439,7 +439,13 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Work ----- */
 /* --------------------------------------- */
-
+.work__icon {
+    display: flex;
+    align-items: center;
+}
+.work__icon:not(:last-child) {
+    margin-bottom: 5rem;
+}
 .work__box {
     display: flex;
     align-items: center;
@@ -466,7 +472,9 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     align-items: center;
 }
-
+.work__links:not(:last-child) {
+    margin-bottom: 5rem;
+}
 .work__text {
     flex: 0 0 30%;
 }
@@ -491,6 +499,7 @@ body:not(.user-is-tabbing) a:focus {
 .work__image-box {
     margin-bottom: var(--gutter-normal);
 }
+
 
 @media(min-width: 901px) {
     .work__image-box {
